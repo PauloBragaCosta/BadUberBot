@@ -21,8 +21,9 @@ Os comandos disponíveis são:
 
 1. /start ou /help: exibe uma mensagem de boas-vindas e instruções de uso do bot;
 2. /nome Fulano: busca o nome do motorista na planilha do Google Sheets;
-3. /placa dados: busca informações do carro do motorista (placa e modelo) na planilha do Google Sheets.
-4. 
+3. /placa dados: busca informações do carro do motorista (placa e modelo) na planilha do Google Sheets;
+4. Enviar o print: envia a foto para o google vision que retorna com os dados encontrados pelo re (Regular expression operations).
+
 O usuário deve enviar uma imagem da tela do aplicativo de transporte do motorista para o bot. O bot irá utilizar a API do Google Vision para extrair o texto da imagem e buscar as informações na planilha do Google Sheets. Se as informações forem encontradas, o bot irá retorná-las ao usuário no chat.
 
 ## Limitações
