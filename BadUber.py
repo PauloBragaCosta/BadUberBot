@@ -15,10 +15,6 @@ bot = telebot.TeleBot(CHAV_API)
 # Cria um cliente da API do Google Vision
 client = vision.ImageAnnotatorClient()
 
-import re
-
-import re
-
 def extract_info(text):
     # Extrair o nome da mensagem
     name = re.search(r'Envie uma mensagem para\s([\w\s]+)', text)
@@ -54,16 +50,16 @@ def append_values(spreadsheet_id, range_name, values):
     """
     Appends values to a spreadsheet.
     """
-    # Load credentials from JSON file
+    # Carregar credenciais do arquivo JSON
     creds = Credentials.from_service_account_file('./Credencial_do_google_sheets.json')
     try:
         service = build('sheets', 'v4', credentials=creds)
-        # Find the first empty row
+        # Encontre a primeira linha vazia
         result = service.spreadsheets().values().get(
             spreadsheetId=spreadsheet_id, range=range_name).execute()
         rows = result.get('values', [])
         first_empty_row = len(rows) + 1
-        # Append the values
+        # Acrescente os valores
         body = {
             'values': values
         }
