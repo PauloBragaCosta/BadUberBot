@@ -1,6 +1,6 @@
-# Extrator de Dados do Motorista via Telegram e Google Vision
+# Extrator de Dados do prot de tela do uber via Telegram e Google Vision
 
-Esse é um código em Python que funciona como um chatbot no Telegram. O objetivo é extrair informações de um motorista, como nome, placa do carro e modelo do carro, a partir de uma imagem de tela do aplicativo de transporte do motorista enviada para o chatbot. O código utiliza a API do Google Vision para fazer a análise da imagem e reconhecimento de texto (OCR), e a API do Google Sheets para armazenar os dados extraídos.
+Esse é um código em Python que funciona como um chatbot no Telegram. O objetivo é extrair informações de um motorista de uber, como nome, placa do carro e modelo do carro, a partir de uma imagem de tela do aplicativo de transporte do motorista enviada para o chatbot. O código utiliza a API do Google Vision para fazer a análise da imagem e reconhecimento de texto (OCR), e a API do Google Sheets para armazenar os dados extraídos. o projeto foi criado apenas para uso pessoal com o objetivo de obter um regitros dos motoristas que cancelam a corrida. 
 
 ## Pacotes Utilizados
 
